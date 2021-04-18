@@ -1,0 +1,4 @@
+# listing all members who do not have a coach:
+SELECT LastName, FirstName, MemberID
+FROM Member
+WHERE Coach IS NULL;
