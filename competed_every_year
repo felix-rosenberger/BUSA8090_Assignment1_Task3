@@ -1,0 +1,10 @@
+# select those members that competed in every year:
+SELECT DISTINCT m.LastName, m.FirstName, m.MemberID 
+FROM Entry e JOIN Member m 
+ON e.MemberID = m.MemberID 
+WHERE EXISTS (
+SELECT * FROM Entry e WHERE e.MemberID = m.MemberID AND Year = 2013) 
+AND EXISTS (
+SELECT * FROM Entry e WHERE e.MemberID = m.MemberID AND Year = 2014) 
+AND EXISTS (
+SELECT * FROM Entry e WHERE e.MemberID = m.MemberID AND Year = 2015);
