@@ -1,0 +1,5 @@
+# select members who did not join any competition in 2013 but in other years:
+SELECT DISTINCT m.LastName, m.FirstName, m.MemberID 
+FROM Member m JOIN Entry e 
+ON m.MemberID = e.MemberID 
+WHERE NOT EXISTS (SELECT * FROM Entry e WHERE m.MemberID = e.MemberID AND Year = 2013);
