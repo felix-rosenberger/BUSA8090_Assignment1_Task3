@@ -1,2 +1,0 @@
-# create file expression.tab using the curl command to download it:
-curl -o expression.tab https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/expression.tab
