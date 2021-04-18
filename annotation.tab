@@ -1,0 +1,2 @@
+# create file annotation.tab using the curl command to download it:
+curl -o annotation.tab https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/annotation.tab
