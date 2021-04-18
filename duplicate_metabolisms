@@ -1,0 +1,5 @@
+# this code lists all duplicate metabolisms from in the annotation table:
+SELECT metabolism, COUNT(metabolism) AS NumberOfCounts 
+FROM annotation 
+GROUP BY metabolism 
+HAVING NumberOfCounts > 1;
