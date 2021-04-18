@@ -1,0 +1,4 @@
+# selecting all members that joined during 2013:
+SELECT LastName, FirstName, MemberID 
+FROM Member 
+WHERE JoinDate LIKE '2013%';
